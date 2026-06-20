@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Payments — King Web Design</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial, sans-serif;background:#f5f7fa;color:#222;padding:40px;}
+    .container{max-width:900px;margin:0 auto;}
+    h1{color:#0f172a}
+    .plan{background:#fff;padding:20px;border-radius:8px;margin:12px 0;box-shadow:0 4px 10px rgba(0,0,0,.06);display:flex;justify-content:space-between;align-items:center;}
+    .actions a{display:inline-block;margin-left:10px;padding:10px 16px;border-radius:6px;text-decoration:none;color:#fff;background:#2563eb;}
+    .actions a.deposit{background:#0b74d1;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pick a plan & pay</h1>
+
+    <div class="plan">
+      <div>
+        <strong>Landing Page</strong><div>$299 — Single-page business website</div>
+      </div>
+      <div class="actions">
+        <a href="STRIPE_LINK_LANDING_FULL" target="_blank">Pay Full $299</a>
+        <a href="STRIPE_LINK_LANDING_DEPOSIT" target="_blank" class="deposit">Pay Deposit $150</a>
+      </div>
+    </div>
+
+    <div class="plan">
+      <div>
+        <strong>Business Website</strong><div>$799 — Up to 5 pages</div>
+      </div>
+      <div class="actions">
+        <a href="STRIPE_LINK_BUSINESS_FULL" target="_blank">Pay Full $799</a>
+        <a href="STRIPE_LINK_BUSINESS_DEPOSIT" target="_blank" class="deposit">Pay Deposit $300</a>
+      </div>
+    </div>
+
+    <p style="margin-top:24px;color:#666">Note: These links are placeholders. Create Payment Links in Stripe (test mode) and replace the STRIPE_LINK_... URLs with the links Stripe generates. Once you’ve tested, switch the links to live Payment Links in Stripe (turn off test mode).</p>
+  </div>
+</body>
+</html>
