@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King Web Design & Development</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#0f172a;
+color:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#0f172a);
+color:white;
+padding:100px 10%;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#fff;
+color:#2563eb;
+font-weight:bold;
+text-decoration:none;
+border-radius:6px;
+margin:10px;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.price-card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.price{
+font-size:40px;
+font-weight:bold;
+margin:20px 0;
+color:#2563eb;
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+max-width:700px;
+margin:auto;
+}
+
+input, textarea, select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#2563eb;
+color:white;
+border:none;
+padding:14px 25px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.payment-buttons{
+text-align:center;
+}
+
+.payment-buttons a{
+display:inline-block;
+margin:15px;
+padding:15px 30px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">King Web Design</div>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+<a href="#pay">Pay</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Professional Websites That Grow Businesses</h1>
+
+<p>
+Custom Websites • E-Commerce Stores • Landing Pages • SEO
+</p>
+
+<a href="#contact" class="btn">Get A Quote</a>
+<a href="#pay" class="btn">Make A Payment</a>
+</section>
+
+<section id="services">
+<h2 class="section-title">Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Business Websites</h3>
+<p>Modern websites designed to attract customers and generate leads.</p>
+</div>
+
+<div class="card">
+<h3>E-Commerce Stores</h3>
+<p>Sell products online with secure checkout systems.</p>
+</div>
+
+<div class="card">
+<h3>Website Redesigns</h3>
+<p>Upgrade outdated websites into modern, high-converting assets.</p>
+</div>
+
+<div class="card">
+<h3>Maintenance</h3>
+<p>Monthly updates, backups, security, and support.</p>
+</div>
+
+</div>
+</section>
+
+<section id="pricing">
+<h2 class="section-title">Pricing</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+<h3>Landing Page</h3>
+<div class="price">$299</div>
+<p>Single-page business website.</p>
+</div>
+
+<div class="price-card">
+<h3>Business Website</h3>
+<div class="price">$799</div>
+<p>Up to 5 pages with contact form.</p>
+</div>
+
+<div class="price-card">
+<h3>E-Commerce</h3>
+<div class="price">$1499</div>
+<p>Online store with payment integration.</p>
+</div>
+
+</div>
+</section>
+
+<section id="portfolio">
+<h2 class="section-title">Portfolio</h2>
+
+<div class="portfolio">
+
+<div class="project">
+<h3>Restaurant Website</h3>
+<p>Modern food ordering and reservation site.</p>
+</div>
+
+<div class="project">
+<h3>Contractor Website</h3>
+<p>Lead generation website for local services.</p>
+</div>
+
+<div class="project">
+<h3>Online Store</h3>
+<p>Custom e-commerce platform with checkout.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Request A Quote</h2>
+
+<form action="https://formsubmit.co/YOUR-EMAIL@example.com" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="text" name="business" placeholder="Business Name">
+
+<select name="service">
+<option>Business Website</option>
+<option>Landing Page</option>
+<option>E-Commerce Store</option>
+<option>Website Redesign</option>
+</select>
+
+<textarea name="message" rows="6" placeholder="Tell us about your project"></textarea>
+
+<button type="submit">Send Request</button>
+
+</form>
+</section>
+
+<section id="pay">
+<h2 class="section-title">Make A Payment</h2>
+
+<div class="payment-buttons">
+
+<a href="YOUR_STRIPE_PAYMENT_LINK">
+Pay With Credit Card
+</a>
+
+<a href="YOUR_PAYPAL_LINK">
+Pay With PayPal
+</a>
+
+</div>
+</section>
+
+<footer>
+<h3>King Web Design & Development</h3>
+
+<p>
+Email: info@yourbusiness.com
+</p>
+
+<p>
+Professional Websites Built For Growth
+</p>
+
+<p>
+© 2026 King Web Design & Development
+</p>
+</footer>
+
+</body>
+</html>
