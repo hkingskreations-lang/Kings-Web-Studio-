@@ -14,6 +14,14 @@
   </style>
 </head>
 <body>
+  <!--
+    After you deploy the site, set the "After payment" redirect URLs for each Stripe Payment Link to your live pages below.
+    Example (use your actual domain, include https://):
+      Success URL: https://yourdomain.com/success.html
+      Cancel URL:  https://yourdomain.com/cancel.html
+
+    I added success.html and cancel.html to this repo. If you host the site at the repository root (https://<your-domain>/), the example URLs above will work.
+  -->
   <div class="container">
     <h1>Pick a plan & pay</h1>
 
@@ -49,7 +57,7 @@
       </div>
     </div>
 
-    <p style="margin-top:24px;color:#666">Note: These links are live Stripe Payment Links. If you need them set to Test mode for staging, create Test-mode links in Stripe and replace the URLs here. Make sure your Public business name and statement descriptor are set in your Stripe account.</p>
+    <p style="margin-top:24px;color:#666">Note: These links are live Stripe Payment Links. After deploying this site to a live domain, open each Payment Link in the Stripe Dashboard, edit the "After payment" settings and paste your Success and Cancel URLs (see top of this file for example). Stripe requires full absolute URLs (including https://).</p>
   </div>
 </body>
 </html>
