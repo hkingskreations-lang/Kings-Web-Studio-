@@ -2,14 +2,237 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Kings Website Studio</title>
+  <title>Kings Website Studio — Professional Website Design</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=/payments.html">
-  <style>body{font-family:Arial, sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#f5f7fa;color:#222}</style>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f7fa; color: #222; line-height: 1.6; }
+    
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo { font-size: 20px; font-weight: bold; color: #0f172a; }
+    
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover { color: #2563eb; }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    
+    .cta-button:hover { background: #1e40af; }
+    
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: #fff;
+      padding: 80px 40px;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+    
+    .hero .cta-button {
+      background: #fff;
+      color: #0f172a;
+    }
+    
+    .hero .cta-button:hover { background: #f0f0f0; }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 40px;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 50px;
+      color: #0f172a;
+    }
+    
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    
+    .service-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    }
+    
+    .service-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+    
+    .service-card .price {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2563eb;
+      margin-bottom: 15px;
+    }
+    
+    .service-card p {
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    
+    .service-card a {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    
+    .service-card a:hover { background: #1e40af; }
+    
+    .about {
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      margin: 60px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,.06);
+    }
+    
+    .about h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+    
+    .about p {
+      color: #666;
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+    
+    footer {
+      background: #0f172a;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    footer a { color: #2563eb; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    
+    @media (max-width: 768px) {
+      header { flex-direction: column; gap: 15px; }
+      nav { display: flex; gap: 15px; margin-left: 0; }
+      nav a { margin-left: 0; }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 16px; }
+      .section-title { font-size: 28px; }
+      .services { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <div>
-    <p>If you are not redirected, <a href="/payments.html">click here to open the payments page</a>.</p>
+  <header>
+    <div class="logo">Kings Website Studio</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/payments.html">Services & Pricing</a>
+      <a href="mailto:hkingskreations@gmail.com">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <h1>Professional Website Design for Your Business</h1>
+    <p>Beautiful, fast, and effective websites that help your business grow.</p>
+    <a href="/payments.html" class="cta-button">View Pricing & Services</a>
+  </section>
+  
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    
+    <div class="services">
+      <div class="service-card">
+        <h3>Landing Page</h3>
+        <div class="price">$299</div>
+        <p>Perfect for businesses getting started online. A single-page website that showcases your business and attracts customers.</p>
+        <a href="/payments.html">Learn More</a>
+      </div>
+      
+      <div class="service-card">
+        <h3>Business Growth Suite</h3>
+        <div class="price">$799</div>
+        <p>Grow your online presence with up to 5 pages. Includes custom design, contact forms, and more.</p>
+        <a href="/payments.html">Learn More</a>
+      </div>
+      
+      <div class="service-card">
+        <h3>Monthly Maintenance</h3>
+        <div class="price">From $99/mo</div>
+        <p>Keep your website updated, secure, and running smoothly with ongoing support and maintenance.</p>
+        <a href="/payments.html">Learn More</a>
+      </div>
+    </div>
+    
+    <div class="about">
+      <h2>Why Choose Kings Website Studio?</h2>
+      <p><strong>Custom Design:</strong> Every website is uniquely designed for your business. No templates, no cookie-cutter designs.</p>
+      <p><strong>Fast & Reliable:</strong> Your site loads quickly and stays online 24/7 with professional hosting.</p>
+      <p><strong>Professional Support:</strong> Questions? We're here to help. Email us anytime at <a href="mailto:hkingskreations@gmail.com">hkingskreations@gmail.com</a>.</p>
+      <p><strong>Results-Focused:</strong> We build websites that convert visitors into customers.</p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+      <h2 style="margin-bottom: 20px;">Ready to get started?</h2>
+      <a href="/payments.html" class="cta-button">View Services & Pricing</a>
+    </div>
   </div>
+  
+  <footer>
+    <p>&copy; 2026 Kings Website Studio. All rights reserved.</p>
+    <p>Email: <a href="mailto:hkingskreations@gmail.com">hkingskreations@gmail.com</a></p>
+  </footer>
 </body>
 </html>
