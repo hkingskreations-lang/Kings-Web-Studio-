@@ -7,62 +7,49 @@
   <style>
     body{font-family:Arial, sans-serif;background:#f5f7fa;color:#222;padding:40px;}
     .container{max-width:900px;margin:0 auto;}
-    h1{color:#0f172a}
-    .plan{background:#fff;padding:20px;border-radius:8px;margin:12px 0;box-shadow:0 4px 10px rgba(0,0,0,.06);display:flex;justify-content:space-between;align-items:center;}
-    .actions a{display:inline-block;margin-left:10px;padding:10px 16px;border-radius:6px;text-decoration:none;color:#fff;background:#2563eb;}
+    h1{color:#0f172a;margin-bottom:30px;}
+    .plan{background:#fff;padding:24px;border-radius:8px;margin:16px 0;box-shadow:0 4px 10px rgba(0,0,0,.06);}
+    .plan-title{font-size:18px;font-weight:bold;margin-bottom:8px;}
+    .plan-description{color:#666;margin-bottom:16px;}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;}
+    .actions a{display:inline-block;padding:12px 18px;border-radius:6px;text-decoration:none;color:#fff;font-weight:bold;text-align:center;}
+    .actions a.full{background:#2563eb;}
     .actions a.deposit{background:#0b74d1;}
+    .actions a:hover{opacity:0.9;}
+    p.note{color:#666;font-size:14px;margin-top:30px;}
   </style>
 </head>
 <body>
-  <!--
-    STRIPE PAYMENT LINK REDIRECT SETUP:
-    For each Payment Link in the Stripe Dashboard, set:
-      Success URL: https://kingswebsitestudio.netlify.app/success.html
-      Cancel URL:  https://kingswebsitestudio.netlify.app/cancel.html
-
-    Instructions:
-    1. Sign in to Stripe Dashboard → Payments → Payment Links
-    2. Click each Payment Link to edit
-    3. Find "After payment" / "Redirect" settings
-    4. Paste the exact Success and Cancel URLs above
-    5. Save and test by opening the link in an incognito window
-  -->
   <div class="container">
     <h1>Pick a plan & pay</h1>
 
     <div class="plan">
-      <div>
-        <strong>Landing Page</strong>
-        <div>$299 — Single-page business website</div>
-      </div>
+      <div class="plan-title">Landing Page</div>
+      <div class="plan-description">$299 — Single-page business website</div>
       <div class="actions">
-        <a href="https://buy.stripe.com/bJefZjezP7LEgZb6PNc3m04" target="_blank">Pay Full $299</a>
+        <a href="https://buy.stripe.com/bJefZjezP7LEgZb6PNc3m04" target="_blank" class="full">Pay Full $299</a>
         <a href="https://buy.stripe.com/9B68wR63j9TMbERfmjc3m03" target="_blank" class="deposit">Pay Deposit $150</a>
       </div>
     </div>
 
     <div class="plan">
-      <div>
-        <strong>Business Growth Suite Website</strong>
-        <div>$799 — Up to 5 pages</div>
-      </div>
+      <div class="plan-title">Business Growth Suite Website</div>
+      <div class="plan-description">$799 — Up to 5 pages</div>
       <div class="actions">
-        <a href="https://buy.stripe.com/7sY00l0IZea27oBa1Zc3m02" target="_blank">Pay Full $799</a>
+        <a href="https://buy.stripe.com/7sY00l0IZea27oBa1Zc3m02" target="_blank" class="full">Pay Full $799</a>
         <a href="https://buy.stripe.com/cNi00l2R72rkeR36PNc3m00" target="_blank" class="deposit">Pay Deposit $300</a>
       </div>
     </div>
 
     <div class="plan">
-      <div>
-        <strong>Monthly Maintenance</strong>
-        <div>Ongoing website updates, hosting, and support — billed monthly.</div>
-      </div>
+      <div class="plan-title">Monthly Maintenance</div>
+      <div class="plan-description">Ongoing website updates, hosting, and support — billed monthly.</div>
       <div class="actions">
-        <a href="https://buy.stripe.com/4gM00l77n2rk4cp7TRc3m05" target="_blank">Subscribe Monthly</a>
+        <a href="https://buy.stripe.com/4gM00l77n2rk4cp7TRc3m05" target="_blank" class="full">Subscribe Monthly</a>
       </div>
     </div>
 
-    <p style="margin-top:24px;color:#666">Note: These are live Stripe Payment Links. Customers will be redirected to our success and cancel pages after payment (see top of this file for the exact URLs to paste into each Payment Link's redirect settings in Stripe).</p>
+    <p class="note">After payment, you'll be redirected to a confirmation page. Stripe will send you a receipt email automatically.</p>
   </div>
 </body>
 </html>
